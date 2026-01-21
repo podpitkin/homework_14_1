@@ -42,6 +42,7 @@ if __name__ == "__main__":
         [product4],
     )
 
+
     print(category2.name)
     print(category2.description)
     print(len(category2.product))
