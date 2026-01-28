@@ -19,6 +19,10 @@ class Category:
 
     @property
     def products(self):
+        return self.__products
+
+    @property
+    def products(self):
         product_list = ''
         for product in self.__products:
             product_list = f'{product.name}, {product.price} руб. Остаток: {product.quantity} шт.'
