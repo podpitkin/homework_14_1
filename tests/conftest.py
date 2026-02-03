@@ -40,3 +40,4 @@ def prod_two():
             Product("Samsung Ultra", "Серый цвет, 4K", 180000.0, 5),
         ],
     )
+
