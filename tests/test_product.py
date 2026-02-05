@@ -1,7 +1,5 @@
 import unittest
-
 from src.product import Product
-
 
 
 def test_product(prod):
@@ -20,7 +18,6 @@ class TestProductPriceSetter(unittest.TestCase):
         self.product.price = 210000.0
         self.assertEqual(self.product.price, 210000.0)
 
+
 def test_prod_str(prod):
-    assert str(prod) == 'Samsung Galaxy S23 Ultra, 180000.0 руб. Остаток: 5 шт.'
-
-
+    assert str(prod) == "Samsung Galaxy S23 Ultra, 180000.0 руб. Остаток: 5 шт."

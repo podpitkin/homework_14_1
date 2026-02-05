@@ -1,3 +1,5 @@
+from src.product import Product
+
 
 class Category:
     name: str
@@ -17,20 +19,22 @@ class Category:
         sum_quantity = 0
         for product in self.__products:
             sum_quantity += product.quantity
-        return f'{self.name}, количество продуктов: {sum_quantity} шт.'
-
+        return f"{self.name}, количество продуктов: {sum_quantity} шт."
 
     def add_product(self, product):
-        self.__products.append(product)
-        Category.product_count += 1
+        if isinstance(product, Product):
+            self.__products.append(product)
+            Category.product_count += 1
+        else:
+            raise TypeError
 
     @property
     def products(self):
         return self.__products
 
     @property
-    def products(self):
-        product_list = ''
+    def products_(self):
+        product_list = ""
         for product in self.__products:
-            product_list = f'{str(product)}'
+            product_list = f"{str(product)}"
         return product_list
