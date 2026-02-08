@@ -1,4 +1,4 @@
-from src.category import Category
+from new_main import Category
 
 
 def test_category_init(first_cat):

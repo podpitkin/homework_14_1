@@ -1,5 +1,5 @@
 import unittest
-from src.product import Product
+from new_main import Product
 
 
 def test_product(prod):

@@ -1,9 +1,9 @@
 import pytest
-
-from src.category import Category
-from src.lawngrass import LawnGrass
-from src.product import Product
-from src.smartphone import Smartphone
+from new_main import Category
+from new_main import LawnGrass
+from new_main import Product
+from new_main import Smartphone
+from new_main import PrintMixin
 
 
 @pytest.fixture
@@ -72,3 +72,4 @@ def grass1():
         "7 дней",
         "Зеленый",
     )
+
